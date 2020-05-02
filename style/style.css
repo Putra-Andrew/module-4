@@ -1,0 +1,233 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* HEADER-SECTION */
+.container {
+    margin-top: 38px;
+}
+
+.site-logo::first-letter {
+    font-weight: 900;
+    color: #1abc9c;
+}
+
+.site-logo {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* navigation */
+.navigation {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 474px;
+    margin-top: 7px;
+}
+
+.nav-list {
+    float: left;
+}
+
+.nav-list:not(:last-child) {
+    margin-right: 33px;
+}
+
+.nav-list {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 11px;
+    color: #0f0101;
+}
+
+.nav-list:hover,
+.nav-list:focus {
+    color: #1abc9c;
+}
+
+/* MAIN-SECTION */
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 50px;
+    color: #515151;
+    text-align: center;
+    margin-top: 105px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 0 auto;
+    margin-top: 31px;
+    margin-bottom: 92px;
+}
+
+/* products block */
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list__item {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.product-list__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.product-list__item:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+}
+
+.product-list__item:hover .product-list__item__wrapper {
+    background-color: #1abc9c;
+}
+
+.product-list__item:focus .product-list__item__wrapper {
+    background-color: #1abc9c;
+}
+
+.product-list__item__image {
+    display: block;
+    background-color: #e9f0fd;
+}
+
+.product-list__item__wrapper {
+    background-color: #323232;
+    text-transform: uppercase;
+}
+
+.product-list__item__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 32px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.product-list__item__title {
+    float: left;
+    width: 201px;
+    padding-left: 14px;
+    font-size: 18px;
+    margin: 0;
+}
+
+.price-tag {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    width: 54px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.44);
+    text-align: center;
+}
+
+
+/* news block */
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list__item {
+    float: left;
+    width: 350px;
+    padding-bottom: 46px;
+}
+
+.news-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.news-list__item__image {
+    margin-bottom: 14px;
+}
+
+.text-type {
+    font-family: 'Open Sans', sans-serif;
+    color: #555252;
+    margin-bottom: 14px;
+}
+
+.news-list__item__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.news-list__item__title::after {
+    content: '';
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #1abc9c;
+    margin-top: 11px;
+    margin-bottom: 22px;
+}
+
+.news-list__item__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.news-list__item__link {
+    display: inline-block;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    padding: 17px 46px;
+    border-radius: 3px;
+    background-color: #4ec6ab;
+    margin: 0;
+}
+
+.news-list__item__link:hover,
+.news-list__item__link:focus {
+    filter: drop-shadow(1px 1.732px 2.5px rgba(0, 0, 0, 0.39));
+}
