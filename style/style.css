@@ -22,10 +22,6 @@ html {
 }
 
 
-.container {
-    margin-top: 38px;
-}
-
 .site-logo::first-letter {
     font-weight: 900;
     color: #1abc9c;
